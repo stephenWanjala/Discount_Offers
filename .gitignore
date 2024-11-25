@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+*.env
+
+# Django specific
+*.log
+*.pot
+*.pyc
+db.sqlite3
+/static/
+media/
+
+# Environment variables and secrets
+.env
+*.env.*
+
+# Migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+
+# Testing
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Pyre
+.pyre/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS files
+.DS_Store
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+*.whl
+
+# Temporary files
+*.tmp
+*.temp
+Discount_Offers/staticfiles
