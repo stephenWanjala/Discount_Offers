@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security settings
 SECRET_KEY = 'django-insecure-xl1*1u*=96$nzqg62*uus5970zsgpciwp5s2l)$x!wiml^19ws'
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']  # Replace '*' with your domain or server IP in production.
 
 # Application definition
@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
     'discount',
 ]
 
@@ -82,10 +83,10 @@ USE_TZ = True
 
 # Static files and WhiteNoise settings
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'discount/static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Location for collected static files
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Static files will be collected here
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles','static')  # Static files will be collected here
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # Enable WhiteNoise compression
 
 # Default primary key field type
