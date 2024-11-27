@@ -87,7 +87,7 @@ USE_TZ = True
 
 # Static files and WhiteNoise settings
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR.parent, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Location for collected static files
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')  # Static files will be collected here
