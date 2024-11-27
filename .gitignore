@@ -9,7 +9,7 @@ venv/
 ENV/
 .venv/
 *.env
-
+staticfiles/
 # Django specific
 *.log
 *.pot
